@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white
+}
+
+.content{
+  margin: 40px;
+}
+
+h2{
+  color: #747bff;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a{
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  margin: 20px;
+  font-size: 14px;
+}
+
+a:hover{
+  color: #747bff
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  background-color: #8010e9;
+  padding: 18px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-size: contain;
+  
+}
+
+.navbar .links{
+margin-left: auto;
+margin-right: 40px;
+}
+
+.home{
+  margin-top: 120px;
+  margin-bottom: 150px;
+  /* margin-left: 20px; */
+}
+
+.home h1{
+  color:white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.home p{
+  margin-top: -10px;
+  font-size: 100px;
+  font-weight:700;
+  color: #b7baee;
+}
+
+.home p + p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 50%;
+  color: #b7baee;
+}
+
+button.resume{
+  width: 90px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #b7baee;
+  color: #b7baee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.resume:hover{
+  border: none;
+  background-color:#8010e9;
+  color: white;
+}
+
+a.a-resume{
+  color: #b7baee;
+}
+
+a.a-resume:hover{
+  color: white;
+}
+
+.resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  color: #747bff;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.title-writeup{
+  color: #b7baee;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  max-width: 1000px;
+}
+
+.title-pic{
+  display: flex;
+}
+
+.title-pic .mypic{
+  width: 37%;
+
+}
+
+.title-pic .pic{
+  height: 40%;
+  border-radius: 10px;
+  float: right;
+}
+
+@media screen and (max-width: 900px){
+  
+  .title-pic .pic{
+    height: 30%;
+    border-radius: 10px;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title-pic .mypic{
+    width: 40%;
+  
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .title-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-pic .pic{
+    height: 300px;
+    border-radius: 10px;
+    float: right;
+  }
+  .title-pic .mypic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
