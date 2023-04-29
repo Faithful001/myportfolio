@@ -34,20 +34,41 @@ a:hover{
   display: flex;
   align-items: center;
   background-color: #8010e9;
-  padding: 18px;
+  padding: 18px; 
   position: fixed;
   top: 0px;
   width: 100%;
   background-size: contain;
+  z-index: 1;
   
 }
 
-.navbar .links{
-margin-left: auto;
-margin-right: 40px;
+.navbar .links-background{
+  margin-left: auto;
+  margin-right: 30px;
+  
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .hamburger .burger{
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .home{
+  margin-left: 30px;
   margin-top: 120px;
   margin-bottom: 150px;
   /* margin-left: 20px; */
@@ -74,7 +95,7 @@ margin-right: 40px;
   color: #b7baee;
 }
 
-button.resume{
+button.resume, .contact-button{
   width: 90px;
   height: 40px;
   background-color: transparent;
@@ -84,11 +105,12 @@ button.resume{
   cursor: pointer;
 }
 
-button.resume:hover{
+button.resume:hover, .contact-button:hover{
   border: none;
   background-color:#8010e9;
   color: white;
 }
+
 
 a.a-resume{
   color: #b7baee;
@@ -110,11 +132,16 @@ a.a-resume:hover{
   margin-bottom: 10px;
 }
 
+.about-me{
+  position: relative;
+  top: 120px;
+}
+
 .title-writeup{
   color: #b7baee;
-  margin-bottom: 30px;
   margin-right: 20px;
   max-width: 1000px;
+  margin-bottom: 20px;
 }
 
 .title-pic{
@@ -130,9 +157,81 @@ a.a-resume:hover{
   height: 40%;
   border-radius: 10px;
   float: right;
+
 }
 
+/* tools{
+  display: flex;
+  flex-direction: column;
+} */
+
+p.tools{
+  color:#747bff;
+  font-size: 20px;
+}
+
+img.pic{
+  filter: grayscale(100%);
+}
+
+img.pic:hover{
+  filter: grayscale(0%);
+}
+
+.portfolio{
+  margin-top:-300px ;
+  margin-bottom: 100px;
+}
+
+.user-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+input, textarea{
+  margin: 5px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+textarea{
+  height: 100px;
+  /* width: 50%; */
+}
+
+input{
+  height: 50px;
+  display: flex;
+  /* width: 50%; */
+}
+
+.input-fields{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 900px){
+  .home h1{
+    font-size: 15px;
+  }
+
+  .home p{
+    font-size: 80px;
+  }
+
+  .home p + p{
+    max-width: 60%;
+  }
   
   .title-pic .pic{
     height: 30%;
@@ -144,8 +243,16 @@ a.a-resume:hover{
 @media screen and (max-width: 750px) {
   .title-pic .mypic{
     width: 40%;
-  
   }
+
+  .home p + p{
+    max-width: 70%;
+  }
+
+  .portfolio{
+    margin-top:-200px ;
+  }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -158,7 +265,7 @@ a.a-resume:hover{
   }
 
   .title-pic .pic{
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     float: right;
   }
@@ -167,4 +274,35 @@ a.a-resume:hover{
     align-items: center;
     justify-content: center;
   }
+
+  .portfolio{
+    margin-top: 150px ;
+  }
+  
+}
+
+@media screen and (max-width: 750px){
+  .hamburger{
+    display: block;
+  }
+  .links-background{
+    width: 50%;
+    height: 100vh;
+    background-color: #8010e9;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    margin-left: auto;
+    opacity: 0.5;
+    display: none;
+  }
+
+  .links{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

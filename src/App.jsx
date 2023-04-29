@@ -1,4 +1,5 @@
 import Aboutme from './Aboutme';
+import Contactme from './Contactme';
 import Home from './Home';
 import Navbar from './Navbar';
 import Portfolio from './Portfolio';
@@ -11,6 +12,7 @@ function App() {
       <Home/>
       <Aboutme/>
       <Portfolio/>
+      <Contactme/>
       </div>
     </div>
   )
