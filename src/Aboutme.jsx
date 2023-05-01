@@ -1,6 +1,6 @@
 const Aboutme = () => {
     return ( 
-        <div className="about-me">
+        <div className="about-me" id="about-me">
             <h1 className="title">About Me.</h1>
             <div className="title-pic">
             <p className="title-writeup">Hello! My name is Faithful King and I enjoy turning complex problems into simple and beautiful designs. My Tech journey began in late 2018, when I used to mess around with DIY toys and arduinos — turns out trying to program an arduino introduced me into the tech space!
