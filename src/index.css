@@ -16,6 +16,8 @@ body {
   margin: 40px;
 }
 
+/* ======NavBar Start============ */
+
 h2{
   color: #747bff;
   padding-left: 20px;
@@ -70,6 +72,11 @@ a:hover{
   margin: 5px;
   border-radius: 10px;
 }
+
+/* ======NavBar End============ */
+
+
+/* ======Home Start============ */
 
 .home{
   margin-left: 30px;
@@ -130,11 +137,15 @@ a.a-resume:hover{
   justify-content: center;
 }
 
+/* ======Home End============ */
+
 .title{
   color: #747bff;
   font-size: 25px;
   margin-bottom: 10px;
 }
+
+/* ======AboutMe Start============ */
 
 .about-me{
   position: relative;
@@ -182,11 +193,19 @@ img.pic:hover{
   filter: grayscale(0%);
 }
 
+/* ======AboutMe End============ */
+
+
+/* ======Portfolio Start============ */
+
 .portfolio{
   margin-top:-300px ;
   margin-bottom: 100px;
 }
 
+/* ======Portfolio End============ */
+
+/* ======ContactMe Start============ */
 .user-details{
   display: flex;
   flex-direction: column;
@@ -222,6 +241,7 @@ input{
   align-items: center;
   justify-content: center;
 }
+/* ======ContactMe End============ */
 
 
 @media screen and (max-width: 900px){

@@ -11,9 +11,7 @@ I have used and still use a couple of tools and languages for my development pro
             
 <div className="mypic"><img className="pic" src="../public/img/mypicture.jpg"></img></div>
 </div>
-    <div className="tools">
-<p className="tools">Tools/languages I've worked so far in my development journey</p>
-    </div>
+
         </div>
      );
 }
