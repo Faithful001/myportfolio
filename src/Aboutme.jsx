@@ -9,8 +9,9 @@ Fast-forward to today, and I’ve had the privilege of working at a start-up, a 
 
 I have used and still use a couple of tools and languages for my development process. I have listed a few of them below (not *really* including frameworks).</p>
             
-<div className="mypic"><img className="pic" src="../public/img/mypicture.jpg"></img></div>
+<img className="pic" src="../public/img/mypicture.jpg"></img>
 </div>
+<p className="tools">Tools/languages I've worked so far in my development journey</p>
 
         </div>
      );

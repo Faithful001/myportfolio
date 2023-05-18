@@ -1,5 +1,7 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -7,7 +9,7 @@ html{
 }
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(0, 0, 0);
   color: white
 }
@@ -17,6 +19,15 @@ body {
 }
 
 /* ======NavBar Start============ */
+ul {
+  margin-left: auto;
+  /* padding-right: 0; */
+  /* padding: 0; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
 
 h2{
   color: #747bff;
@@ -49,10 +60,25 @@ a:hover{
   
 }
 
-.navbar .links-background{
-  margin-left: auto;
-  margin-right: 30px;
-  
+
+.nav-list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  position: relative;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: blue;
 }
 
 .hamburger{
@@ -165,6 +191,12 @@ a.a-resume:hover{
 
 .title-pic .mypic{
   width: 37%;
+  height: 50px;
+
+}
+
+img.pic{
+  height: 20px;
 
 }
 
